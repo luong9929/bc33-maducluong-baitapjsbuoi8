@@ -78,15 +78,15 @@ function ex6(arr) {
 ex6(arr);
 //ex7 :Sắp xếp mảng theo thứ tự tăng dần
 function ex7(arr) {
-    for(var i = arr.length-1 ; i > 0 ; i--){
-        for(var k = 0 ; k < i ; k++){
-           if(arr[k] > arr[k + 1]){
-            var temp = arr[k]
-            arr[k] = arr[k+1]
-            arr[k+1] = temp
+    
+        for(var i = 0 ; i < arr.length ; i++){
+           if(arr[i] > arr[i + 1]){
+            var temp = arr[i]
+            arr[i] = arr[i+1]
+            arr[i+1] = temp
            }
         }
-    }
+    
   
     console.log(arr);
 }
