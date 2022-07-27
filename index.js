@@ -108,7 +108,7 @@ function ex8() {
   var SNT = 0;
 
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 !== 0 && arr[i] > 0) {
+    if (Math.floor(arr[i])%2===0) {
       SNT = arr[i];
       break;
     } 
